@@ -26,7 +26,7 @@ from SiestaRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
-    ubot2,
+    #ubot2,
 )
 from SiestaRobot import pbot as app 
 from SiestaRobot import arq
@@ -112,7 +112,7 @@ async def inline_help_func(__HELP__):
 async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
-    ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
+    #ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
         InlineKeyboardButton("Main bot", url="https://t.me/ShikimoriXrobot"),
         InlineKeyboardButton(
@@ -123,7 +123,6 @@ async def alive_function(answers):
     msg = f"""
 **[Shikimori Robot ❤️](https://t.me/ShikimoriXsupport):**
 **MainBot:** `{bot_state}`
-**UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
@@ -371,79 +370,79 @@ async def lyrics_func(answers, text):
     return answers
 
 
-async def tg_search_func(answers, text, user_id):
-    if user_id not in DEV_USERS:
-        msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR DEV USERS__"
-        answers.append(
-            InlineQueryResultArticle(
-                title="ERROR",
-                description="THIS FEATURE IS ONLY FOR SUDO USERS",
-                input_message_content=InputTextMessageContent(msg),
-            )
-        )
-        return answers
-    if str(text)[-1] != ":":
-        msg = "**ERROR**\n__Put A ':' After The Text To Search__"
-        answers.append(
-            InlineQueryResultArticle(
-                title="ERROR",
-                description="Put A ':' After The Text To Search",
-                input_message_content=InputTextMessageContent(msg),
-            )
-        )
+# async def tg_search_func(answers, text, user_id):
+#     if user_id not in DEV_USERS:
+#         msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR DEV USERS__"
+#         answers.append(
+#             InlineQueryResultArticle(
+#                 title="ERROR",
+#                 description="THIS FEATURE IS ONLY FOR SUDO USERS",
+#                 input_message_content=InputTextMessageContent(msg),
+#             )
+#         )
+#         return answers
+#     if str(text)[-1] != ":":
+#         msg = "**ERROR**\n__Put A ':' After The Text To Search__"
+#         answers.append(
+#             InlineQueryResultArticle(
+#                 title="ERROR",
+#                 description="Put A ':' After The Text To Search",
+#                 input_message_content=InputTextMessageContent(msg),
+#             )
+#         )
 
-        return answers
-    text = text[0:-1]
-    async for message in ubot2.search_global(text, limit=49):
-        buttons = InlineKeyboard(row_width=2)
-        buttons.add(
-            InlineKeyboardButton(
-                text="Origin",
-                url=message.link if message.link else "https://t.me/telegram",
-            ),
-            InlineKeyboardButton(
-                text="Search again",
-                switch_inline_query_current_chat="search",
-            ),
-        )
-        name = (
-            message.from_user.first_name
-            if message.from_user.first_name
-            else "NO NAME"
-        )
-        caption = f"""
-**Query:** {text}
-**Name:** {str(name)} [`{message.from_user.id}`]
-**Chat:** {str(message.chat.title)} [`{message.chat.id}`]
-**Date:** {ctime(message.date)}
-**Text:** >>
-{message.text.markdown if message.text else message.caption if message.caption else '[NO_TEXT]'}
-"""
-        result = InlineQueryResultArticle(
-            title=name,
-            description=message.text if message.text else "[NO_TEXT]",
-            reply_markup=buttons,
-            input_message_content=InputTextMessageContent(
-                caption, disable_web_page_preview=True
-            ),
-        )
-        answers.append(result)
-    return answers
+#         return answers
+#     text = text[0:-1]
+#     async for message in ubot2.search_global(text, limit=49):
+#         buttons = InlineKeyboard(row_width=2)
+#         buttons.add(
+#             InlineKeyboardButton(
+#                 text="Origin",
+#                 url=message.link if message.link else "https://t.me/telegram",
+#             ),
+#             InlineKeyboardButton(
+#                 text="Search again",
+#                 switch_inline_query_current_chat="search",
+#             ),
+#         )
+#         name = (
+#             message.from_user.first_name
+#             if message.from_user.first_name
+#             else "NO NAME"
+#         )
+#         caption = f"""
+# **Query:** {text}
+# **Name:** {str(name)} [`{message.from_user.id}`]
+# **Chat:** {str(message.chat.title)} [`{message.chat.id}`]
+# **Date:** {ctime(message.date)}
+# **Text:** >>
+# {message.text.markdown if message.text else message.caption if message.caption else '[NO_TEXT]'}
+# """
+#         result = InlineQueryResultArticle(
+#             title=name,
+#             description=message.text if message.text else "[NO_TEXT]",
+#             reply_markup=buttons,
+#             input_message_content=InputTextMessageContent(
+#                 caption, disable_web_page_preview=True
+#             ),
+#         )
+#         answers.append(result)
+#     return answers
 
 
-async def paste_func(answers, text):
-    start_time = time()
-    url = await paste(text)
-    msg = f"__**{url}**__"
-    end_time = time()
-    answers.append(
-        InlineQueryResultArticle(
-            title=f"Pasted In {round(end_time - start_time)} Seconds.",
-            description=url,
-            input_message_content=InputTextMessageContent(msg),
-        )
-    )
-    return answers
+# async def paste_func(answers, text):
+#     start_time = time()
+#     url = await paste(text)
+#     msg = f"__**{url}**__"
+#     end_time = time()
+#     answers.append(
+#         InlineQueryResultArticle(
+#             title=f"Pasted In {round(end_time - start_time)} Seconds.",
+#             description=url,
+#             input_message_content=InputTextMessageContent(msg),
+#         )
+#     )
+#     return answers
 
 
 async def webss(url):
