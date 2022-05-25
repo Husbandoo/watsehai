@@ -48,4 +48,6 @@
 <p align="center">
 
 <a href="https://t.me/Itz_Light_Yagami"> <img src="https://img.shields.io/badge/Kira-Owner-purple?style=for-the-badge&logo=telegram" alt="Kira on Telegram" /> </a>
+  <a href="https://t.me/SOME1_HING"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
+  </p>
 
