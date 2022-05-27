@@ -29,16 +29,16 @@
 ──「 DEPLOY ON HEROKU 」──
 </h2>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Light-Sensei/ShikimoriRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Husbandoo/Kaguya"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <h2 align="center">
 ──「 SUPPORT 」──
 </h2>    
 
 <p align="center">
-<a href="https://t.me/Itz_Light_yagami"> <img src="https://img.shields.io/badge/Light-User-green?style=for-the-badge&logo=telegram" alt="Light on Telegram" /> </a>
-<a href="https://t.me/JinWooXsupport"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
-<a href="https://t.me/JinWooXupdate"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
+<a href="https://t.me/Itz_Light_yagami"> <img src="https://img.shields.io/badge/Husbando-User-green?style=for-the-badge&logo=telegram" alt="Husbando on Telegram" /> </a>
+<a href="https://t.me/shinoniyasupport"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
+<a href="https://t.me/shinomiyaupdates"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
 </p>
 
 <h2 align="center">
@@ -47,5 +47,5 @@
 
 <p align="center">
 
-<a href="https://t.me/Itz_Light_Yagami"> <img src="https://img.shields.io/badge/Kira-Owner-purple?style=for-the-badge&logo=telegram" alt="Kira on Telegram" /> </a>
+<a href="https://t.me/Husbandoo"> <img src="https://img.shields.io/badge/Husbando-Owner-purple?style=for-the-badge&logo=telegram" alt="Husbando on Telegram" /> </a>
 
