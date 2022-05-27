@@ -254,7 +254,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Matter Matte Kudasai.....</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Matter Matte Kudasai Baka...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╔═━「<b> Appraisal results:</b> 」\n"
@@ -319,7 +319,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Council Worker'."
         disaster_level_present = True
     elif user.id == 1492076351:
-         text += "\n\nOwner Of The Bot. Queen Of [𝗛𝘂𝘀𝗯𝗮𝗻𝗱𝗼](http://t.me/Husbandoo). Bot Name Inspired From 'Kaguya Sama : Love Is War'."
+         text += "\n\nOwner Of The Bot. Queen Of [Husbando をに](http://t.me/Husbandoo). Bot Name Inspired From 'Kaguya Sama : Love Is War'."
          disaster_level_present = True
 
     try:
@@ -471,7 +471,7 @@ def stats(update, context):
             + "\n*Kaguya Shinomiya Statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[✦ Support](https://t.me/Shinomiyasupport) | [✦ Updates](https://t.me/Shinomiyaupdates)\n\n"
-            + "╘══「 by [𝗛𝘂𝘀𝗯𝗮𝗻𝗱𝗼](https://t.me/Husbando) 」\n",
+            + "╘══「 by [Husbando をに](https://t.me/Husbando) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -485,7 +485,7 @@ def stats(update, context):
                     )
                     + f"\n\n✦ [Support](https://t.me/Shinomiyasupport) | ✦ [Updates](https://t.me/Shinomiyaupdates)\n\n"
                 )
-                + "╘══「 by [𝗛𝘂𝘀𝗯𝗮𝗻𝗱𝗼](https://t.me/Husbandoo) 」\n"
+                + "╘══「 by [Husbando をに](https://t.me/Husbandoo) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
