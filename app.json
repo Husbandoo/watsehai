@@ -36,12 +36,12 @@
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "8170834"
+         "value": "7761098"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "77fa668f74a548d224bb5c521f16c559"
+         "value": "6b19682d1aeeda50a4aa8b6eb61f3a4e"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -51,7 +51,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "945137470"
+         "value": "1938491135"
      },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -68,22 +68,22 @@
 
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": "5130078117"
+         "value": "5364041591"
       },
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Itz_Light_yagami"
+         "value": "Husbandoo"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "shikimorixsupport"
+         "value": "ShinomiyaSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://grpbot:grpbot@cluster0.mkk9o.mongodb.net/test1?retryWrites=true&w=majority"
+         "value": ""
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -123,7 +123,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "5070015537 5083917315 5173422953 2034641799  5228970545 5233712075 5297261589 5374663827"
+         "value": ""
      },
       "ARQ_API": {
             "description": "Get this from @ARQRobot.",
@@ -133,7 +133,7 @@
       "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": "J4UPA8ZxDm~c9GLNji5mNWG~7mjS2W0o1mv5NXQ0SF~0YLfm9XWj7JcDsnaOFjto"
+         "value": "ixd7Qui~aQOTeaLynGRKeVqczYaZQFopZpfYagMx2ZrdUcSzMW~h2N1gJoGRZzmP"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -147,7 +147,7 @@
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "5145883564 2109323250 5177315126 1242979521 5004579644 1777149565 1919591458"
+         "value": ""
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
