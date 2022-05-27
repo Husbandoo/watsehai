@@ -84,21 +84,21 @@ pm_settings_groups_text: "*{}* has the following settings for the *{}* module:\n
 pm_settings_groupss_text: |
     Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.
 # Group Settings Text
-group_settings_text: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs, ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs."
+group_settings_text: "Click Here To Get This Chats Settings , As Well As Yours."
 # Group Settings Button
-group_settings_button: "sᴇᴛᴛɪɴɢs"
+group_settings_button: "Settings"
 
 # PM Button
-add_bot_to_group_button: "♡ ᴀᴅᴅ ꜱʜɪᴋɪᴍᴏʀɪ ᴛᴏ ɢʀᴏᴜᴘ ♡"
+add_bot_to_group_button: "Add Kaguya To Your Group"
 
 
-support_chat_link_button: "ꜱᴜᴘᴘᴏʀᴛ"
-updates_channel_link_button: "ᴜᴘᴅᴀᴛᴇs"
-notes_button: "ɴᴏᴛᴇs"
+support_chat_link_button: "Support"
+updates_channel_link_button: "Updates"
+notes_button: "Notes"
 
 
-help_button: "ʜᴇʟᴘ"
-back_button: "ʙᴀᴄᴋ"
+help_button: "Help"
+back_button: "Back"
 about_button: "♡ ᴀʙᴏᴜᴛ sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ ♡"
 chat_grp_button: "ᴄʜᴀᴛ ɢʀᴏᴜᴘ"
 darling_button: "ᴅᴀʀʟɪɴɢ"
