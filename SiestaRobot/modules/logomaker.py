@@ -197,7 +197,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Kaguya Shinomiya ](https://t.me/KaguyaProBot)",
+            caption="Logo by [Kaguya Shinomiya](https://t.me/KaguyaProBot)",
             force_document=False,
         )
         os.remove(flnme)
