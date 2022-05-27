@@ -220,6 +220,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/ShinomiyaSupport"),
                             InlineKeyboardButton(text=gs(chat.id, "updates_button"), url="t.me/ShinomiyaUpdates"),
+                        ]
                     ]
                 ),
                 parse_mode=ParseMode.MARKDOWN,
