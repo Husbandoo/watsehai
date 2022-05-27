@@ -19,7 +19,7 @@ async def awake(event):
   TEXT += f"◈ **Library Version :** `{telever}` \n\n"
   TEXT += f"◈ **Telethon Version :** `{tlhver}` \n\n"
   TEXT += f"◈ **Pyrogram Version :** `{pyrover}` \n\n"
-  TEXT += "**Thanks For Adding Me Here ♡**"
+  TEXT += "**Thanks For Adding Me Here**"
   BUTTON = [[Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/Shinomiyaupdates"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Shinomiyasupport"), 
-                       Button.url("ᴍʏ ᴅᴀʀʟɪɴɢ", "https://t.me/Husbandoo")]]
+                       Button.url("ᴘʀᴇꜱɪᴅᴇɴᴛ", "https://t.me/Husbandoo")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
