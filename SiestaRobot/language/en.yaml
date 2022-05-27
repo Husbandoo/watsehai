@@ -99,9 +99,10 @@ notes_button: "Notes"
 
 help_button: "Help"
 back_button: "Back"
-about_button: "♡ ᴀʙᴏᴜᴛ sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ ♡"
-chat_grp_button: "ᴄʜᴀᴛ ɢʀᴏᴜᴘ"
-darling_button: "ᴅᴀʀʟɪɴɢ"
+aogiri_button: "[Aogiri]"
+support_button: "Support"
+owner_button: "[Owner]"
+updates_button: "Updates"
 
 # MODULES
 admin_help: |
