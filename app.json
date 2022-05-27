@@ -63,7 +63,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "shikimorixrobot"
+         "value": "KaguyaProbot"
       },
 
       "BOT_ID": {
