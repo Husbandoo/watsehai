@@ -114,7 +114,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Shikimori Robot](https://t.me/ShikimoriXrobot)",
+            caption="Logo by [Kaguya Shinomiya](https://t.me/KaguyaProBot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -197,7 +197,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Shikimori Robot](https://t.me/Shikimorixrobot)",
+            caption="Logo by [Kaguya Shinomiya ](https://t.me/KaguyaProBot)",
             force_document=False,
         )
         os.remove(flnme)
