@@ -209,17 +209,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
-                        ],
-                        [
-                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
-                            InlineKeyboardButton(text=gs(chat.id, "darling_button"), url="t.me/Itz_Light_Yagami"),
-                            InlineKeyboardButton(text=gs(chat.id, "chat_grp_button"), url="t.me/night_raiderss"),
-                        ],
-                        [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/shikimoriXrobot?startgroup=new"),
-                        ]
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/KaguyaProbot?startgroup=new"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "aogiri_button"), url="t.me/AogiriNetwork"),
+                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "owner_button"), url="t.me/Husbandoo"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/ShinomiyaSupport"),
+                            InlineKeyboardButton(text=gs(chat.id, "updates_button"), url="t.me/ShinomiyaUpdates"),
                     ]
                 ),
                 parse_mode=ParseMode.MARKDOWN,
