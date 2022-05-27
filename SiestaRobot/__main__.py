@@ -56,7 +56,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 from SiestaRobot.modules.language import gs
-
+from SiestaRobot.cyrus import PM_START_TEXT, PM_START_IMG
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -200,8 +200,9 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                text=gs(chat.id, "pm_start_text").format(
+            update.effective_message.reply_photo(
+                PM_START_IMG,
+                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
@@ -401,8 +402,9 @@ def siesta_about_callback(update, context):
     elif query.data == "siesta_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_text(
-                text=gs(chat.id, "pm_start_text").format(
+        query.message.edit_photo(
+                PM_START_IMG,
+                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
@@ -516,7 +518,8 @@ def Source_about_callback(update, context):
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
-                text=gs(chat.id, "pm_start_text").format(
+                PM_START_PIC,
+                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
