@@ -776,10 +776,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 945137470:
+        if OWNER_ID != 1938491135:
             update.effective_message.reply_text(
                 "I'm free for everyone If you wanna make me smile, just join"
-                "[My Channel]({})".format(DONATION_LINK),
+                "[My Channel](http://t.me/ElDoradoo)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
